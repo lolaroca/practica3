@@ -1,77 +1,134 @@
 <!doctype html>
-<html>
-<head> 
+<html lang="en">
+<head>
 	<meta charset="utf-8">
-	<link rel="icon" href=https://marca.bankinter.com/file_source/Marca/images/Entender/Basicos/Logotipo/img_secundario_02.jpg>
 	<title>Bankinter</title>
+	<link rel="icon" href=https://marca.bankinter.com/file_source/Marca/images/Entender/Basicos/Logotipo/img_secundario_02.jpg>
+	<meta name="theme-color" content="#f6973f2c">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body style="background-color: #f6973f2c;">
+<div class="container">
+	<div class="row">
+		<div class="col align-self-start">
+			<h1 class="blog-header-logo text-dark">Bankinter</h1>
+		</div>
+		<div class="col-7">
+			<form action="/login" method="post">
+				<label for="user">Usuario:</label>
+				<input type="text" id="user" name="user">
+				<label for="pass">Contraseña:</label>
+				<input type="password" id="pass" name="password">
+				<button type="submit">Login</button>
+			</form>
+		</div>
 
-<h1 style="color:#ff9100">ZONA CLIENTES BANKINTER</h1>
-
-<h3>OPERACIONES</h3>
+	</div>
+</div>
+<hr>
+<h3 style="color: #FE9200">OPERACIONES</h3>
 <form action="/login" method="post">
 	<label for="user">Usario:</label>
 	<input type="text" id="user" name="user"> <br>
 	<label for="pass">Contraseña:</label>
 	<input type="password" id="pass" name="password"> <br>
-    <label for="cuenta">Numero de cuenta:</label>
+	<label for="cuenta">Numero de cuenta:</label>
 	<input type="text" id="cuenta" name="cuenta"> <br>
 	<label for="cuenta">Operacion a realizar: </label>
 	<select name="select">
 		<option value="1">Transferencia</option>
 		<option value="2">Bizum</option>
-        <option value="3">Retirar dinero</option>
-        <option value="4">Ingresar dinero</option>
+		<option value="3">Retirar dinero</option>
+		<option value="4">Ingresar dinero</option>
 	</select> <br>
-    <label for="dinero">Dinero:</label>
+	<label for="dinero">Dinero:</label>
 	<input type="text" id="dinero" name="dinero"> <br>
 	<button type="submit">Enviar</button>
 </form>
 
 <hr />
 
-<h3>CAMBIARME DE SUCURSAL</h3>
+<h3 style="color: #FE9200">CAMBIARME DE SUCURSAL</h3>
 <form action="/login" method="post">
 	<label for="user">Usario:</label>
 	<input type="text" id="user" name="user"> <br>
 	<label for="pass">Contraseña:</label>
 	<input type="password" id="pass" name="password"> <br>
-    <label for="cuenta">Numero de cuenta:</label>
+	<label for="cuenta">Numero de cuenta:</label>
 	<input type="text" id="cuenta" name="cuenta"> <br>
 	<label for="op">Sucursal actual: </label>
 	<select name="select">
 		<option value="1">Madrid - Plaza de España</option>
 		<option value="2">Madrid - Alberto Aguilera</option>
-        <option value="3">Madrid - Paseo de Recoletos</option>
-        <option value="4">Madrid - Principe Pio</option>
-        <option value="5">Madrid - Colón</option>
-        <option value="6">Otra</option>
+		<option value="3">Madrid - Paseo de Recoletos</option>
+		<option value="4">Madrid - Principe Pio</option>
+		<option value="5">Madrid - Colón</option>
+		<option value="6">Otra</option>
 	</select> <br>
-    <label for="otra">Si ha escogido otra:</label> 
+	<label for="otra">Si ha escogido otra:</label>
 	<input type="text" id="otra" name="otra"> <br>
-    <label for="otra">Sucursal a cambiarse: </label>
+	<label for="otra">Sucursal a cambiarse: </label>
 	<select name="select">
 		<option value="1">Madrid - Plaza de España</option>
 		<option value="2">Madrid - Alberto Aguilera</option>
-        <option value="3">Madrid - Paseo de Recoletos</option>
-        <option value="4">Madrid - Principe Pio</option>
-        <option value="5">Madrid - Colón</option>
-        <option value="6">Otra</option>
+		<option value="3">Madrid - Paseo de Recoletos</option>
+		<option value="4">Madrid - Principe Pio</option>
+		<option value="5">Madrid - Colón</option>
+		<option value="6">Otra</option>
 	</select> <br>
-    <label for="otra1">Si ha escogido otra:</label>
+	<label for="otra1">Si ha escogido otra:</label>
 	<input type="text" id="otra1" name="otra1"> <br>
 
 	<button type="submit">Enviar</button>
 </form>
+<br></br>
+<footer class="bg-light text-center text-white">
+	<!-- Grid container -->
+	<div class="container p-4 pb-0">
+		<!-- Facebook -->
+		<a class="btn btn-primary btn-floating m-1" style="color: #3b5998;" href="https://es-es.facebook.com/bankinter/" role="button">
+			<i class="fab fa-facebook-f fa-lg"></i>
+		</a>
 
-<hr />
-<p>
-	Contacto: bankinter@hotmail.com <br> 
-	Telefono: +34 678 567 89 <br>
-	Pagina princial: <a href="index.html">Pagina principal</a> <br> <br>
-</p> 
+		<!-- Twitter -->
+		<a
+				class="btn btn-primary btn-floating m-1"
+				style="background-color: #55acee;"
+				href="https://twitter.com/Bankinter"
+				role="button"
+		><i class="fab fa-twitter"></i
+		></a>
 
+
+		<!-- Instagram -->
+		<a
+				class="btn btn-primary btn-floating m-1"
+				style="background-color: #FF6FD1 "
+				href="https://www.instagram.com/bankinter/?hl=es"
+				role="button"
+		><i class="fab fa-instagram"></i
+		></a>
+
+		<!-- Linkedin -->
+		<a
+				class="btn btn-primary btn-floating m-1"
+				style="background-color: #0082ca;"
+				href="https://es.linkedin.com/company/bankinter"
+				role="button"
+		><i class="fab fa-linkedin-in"></i
+		></a>
+		<!-- Section: Social media -->
+	</div>
+	<!-- Grid container -->
+
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		© 2022 Copyright:
+		<a class="text-white" href="https://mdbootstrap.com/">Bankinter</a>
+	</div>
+	<!-- Copyright -->
+</footer>
 
 </body>
 </html>
